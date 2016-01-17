@@ -167,29 +167,36 @@
             <!-- Конец блока категорий -->
             <a id="filtrbt" href="#" title="Фильтровать категории" data-toggle="modal" data-target="#myModal"></a>    
             <!-- Фильтр -->
-            <div class="filtr sb">
-                <div class="filter-price"> 
-                    <label>Цена
-                        <select class="unit-selector">
-                            <option value="rub">rub</option>
-                            <option value="usd">usd</option>
-                        </select>
-                    </label>
-                    <div class="range">
-                        <input type="text" class="min" placeholder="от">
-                        <span class="separator">—</span>
-                        <input type="text" class="max" placeholder="до">
-                    </div>
-                    <div class="checkbox whithfoto">
-                        <label><input type="checkbox" value="">Только с фото</label>
-                    </div>
-                    <div class="buttons">
-                        <button type="button" class="btn btn-success">ОК</button>
-                        <button type="button" class="btn btn-danger">Отмена</button>
-                    </div>
-                    Поиск
+            <div class="filtr">
+                <div class="form-group col-xs-8" style="padding-left: 0px; margin-bottom: 10px">
+                  <label for="sel1">Цена: </label>
+                  <select class="form-control" id="sel1">
+                    <option>руб.</option>
+                    <option>usd</option>
+                  </select>
+                </div> 
+                <div class="clear"></div>
+                <div class="col-xs-5" id="maxmin">
+                  <input class="form-control input-sm" id="ex1" type="text" placeholder="от">
                 </div>
+                <div class="col-xs-1" id="defis">—</div>
+                <div class="col-xs-5" id="maxmin">
+                  <input class="form-control input-sm" id="ex2" type="int" placeholder="до">
+                </div>
+                <div class="clear"></div>
+               <div class="checkbox">
+                  <label><input type="checkbox" value=""> C фото</label>
+               </div>
+               <div class="buttons">
+                  <button type="button" class="btn btn-success">ОК</button>
+                  <button type="button" class="btn btn-danger">Отмена</button>
+               </div>
             </div>
+
+
+
+
+          
             <!-- Конец блока Фильтр -->
         </div>
         <!-- /#sidebar-wrapper -->
@@ -503,6 +510,342 @@
                             </div>  
                             <div class="clear"></div>
                         </div>                  
+                        <!-- ////////////////////////////////////////////////////////////////////////////-->
+                        <div class="postline" id="6">
+                            <div class="first cell">
+                                <div class="image tablecell photo">
+                                    <a href="#" class="linkphoto" data-toggle="modal" data-target=".gallerymodal" title="Заголовок объявления"><img src="images/photo.jpg"></a>
+                                </div>
+                                <!--<div class="image thumb"></div>-->
+                            </div>          
+                            <div class="second cell">
+                                <div class="tablecell">
+                                    <div class="star no center">
+                                        <a href="#" title="Добавить в избранное"></a>
+                                    </div>
+                                    <div class="postid center">
+                                        ID: 9999999
+                                    </div>
+                                    <div class="data center">
+                                        <span>23.11</span><br />
+                                        <span>11:32</span>
+                                    </div>
+                                </div>
+                            </div>          
+                            <div class="third cell">
+                                <h4 class="title"><a href="#" data-toggle="modal" data-target=".postlinemodal">Меняю Дом на 1 или 2х комнатную квартиру в Симферополе...</a></h4>
+                                <div class="infobox">
+                                    <div class="addressbox">Город: Керчь, Севастопольская 80</div>
+                                    <div class="fieldbox">
+                                        <span class="field">Комнат: 3</span>    
+                                        <span class="field">Общая площадь: 100</span>   
+                                        <span class="field">Доп. поле: значение</span>  
+                                    </div>
+                                </div>
+                            </div>              
+                            <div class="fourth cell">
+                                <div class="price center">
+                                    <span class="ru">3 000 000 руб.</span>
+                                    <span class="usd">50 000 usd</span>
+                                </div>
+                                <div class="center">
+                                    <span class="stat work">Проверяется</span>
+                                </div>
+                                <div class="center">
+                                    <div class="same"></div>
+                                </div>
+                            </div>  
+                            <div class="clear"></div>
+                        </div>
+                        <!-- ////////////////////////////////////////////////////////////////////////////-->
+                        <!-- ////////////////////////////////////////////////////////////////////////////-->
+                        <div class="postline" id="6">
+                            <div class="first cell">
+                                <div class="image tablecell photo">
+                                    <a href="#" class="linkphoto" data-toggle="modal" data-target=".gallerymodal" title="Заголовок объявления"><img src="images/photo.jpg"></a>
+                                </div>
+                                <!--<div class="image thumb"></div>-->
+                            </div>          
+                            <div class="second cell">
+                                <div class="tablecell">
+                                    <div class="star no center">
+                                        <a href="#" title="Добавить в избранное"></a>
+                                    </div>
+                                    <div class="postid center">
+                                        ID: 9999999
+                                    </div>
+                                    <div class="data center">
+                                        <span>23.11</span><br />
+                                        <span>11:32</span>
+                                    </div>
+                                </div>
+                            </div>          
+                            <div class="third cell">
+                                <h4 class="title"><a href="#" data-toggle="modal" data-target=".postlinemodal">Меняю Дом на 1 или 2х комнатную квартиру в Симферополе...</a></h4>
+                                <div class="infobox">
+                                    <div class="addressbox">Город: Керчь, Севастопольская 80</div>
+                                    <div class="fieldbox">
+                                        <span class="field">Комнат: 3</span>    
+                                        <span class="field">Общая площадь: 100</span>   
+                                        <span class="field">Доп. поле: значение</span>  
+                                    </div>
+                                </div>
+                            </div>              
+                            <div class="fourth cell">
+                                <div class="price center">
+                                    <span class="ru">3 000 000 руб.</span>
+                                    <span class="usd">50 000 usd</span>
+                                </div>
+                                <div class="center">
+                                    <span class="stat work">Проверяется</span>
+                                </div>
+                                <div class="center">
+                                    <div class="same"></div>
+                                </div>
+                            </div>  
+                            <div class="clear"></div>
+                        </div>
+                        <!-- ////////////////////////////////////////////////////////////////////////////-->
+                        <!-- ////////////////////////////////////////////////////////////////////////////-->
+                        <div class="postline" id="6">
+                            <div class="first cell">
+                                <div class="image tablecell photo">
+                                    <a href="#" class="linkphoto" data-toggle="modal" data-target=".gallerymodal" title="Заголовок объявления"><img src="images/photo.jpg"></a>
+                                </div>
+                                <!--<div class="image thumb"></div>-->
+                            </div>          
+                            <div class="second cell">
+                                <div class="tablecell">
+                                    <div class="star no center">
+                                        <a href="#" title="Добавить в избранное"></a>
+                                    </div>
+                                    <div class="postid center">
+                                        ID: 9999999
+                                    </div>
+                                    <div class="data center">
+                                        <span>23.11</span><br />
+                                        <span>11:32</span>
+                                    </div>
+                                </div>
+                            </div>          
+                            <div class="third cell">
+                                <h4 class="title"><a href="#" data-toggle="modal" data-target=".postlinemodal">Меняю Дом на 1 или 2х комнатную квартиру в Симферополе...</a></h4>
+                                <div class="infobox">
+                                    <div class="addressbox">Город: Керчь, Севастопольская 80</div>
+                                    <div class="fieldbox">
+                                        <span class="field">Комнат: 3</span>    
+                                        <span class="field">Общая площадь: 100</span>   
+                                        <span class="field">Доп. поле: значение</span>  
+                                    </div>
+                                </div>
+                            </div>              
+                            <div class="fourth cell">
+                                <div class="price center">
+                                    <span class="ru">3 000 000 руб.</span>
+                                    <span class="usd">50 000 usd</span>
+                                </div>
+                                <div class="center">
+                                    <span class="stat work">Проверяется</span>
+                                </div>
+                                <div class="center">
+                                    <div class="same"></div>
+                                </div>
+                            </div>  
+                            <div class="clear"></div>
+                        </div>
+                        <!-- ////////////////////////////////////////////////////////////////////////////-->
+                        <!-- ////////////////////////////////////////////////////////////////////////////-->
+                        <div class="postline" id="6">
+                            <div class="first cell">
+                                <div class="image tablecell photo">
+                                    <a href="#" class="linkphoto" data-toggle="modal" data-target=".gallerymodal" title="Заголовок объявления"><img src="images/photo.jpg"></a>
+                                </div>
+                                <!--<div class="image thumb"></div>-->
+                            </div>          
+                            <div class="second cell">
+                                <div class="tablecell">
+                                    <div class="star no center">
+                                        <a href="#" title="Добавить в избранное"></a>
+                                    </div>
+                                    <div class="postid center">
+                                        ID: 9999999
+                                    </div>
+                                    <div class="data center">
+                                        <span>23.11</span><br />
+                                        <span>11:32</span>
+                                    </div>
+                                </div>
+                            </div>          
+                            <div class="third cell">
+                                <h4 class="title"><a href="#" data-toggle="modal" data-target=".postlinemodal">Меняю Дом на 1 или 2х комнатную квартиру в Симферополе...</a></h4>
+                                <div class="infobox">
+                                    <div class="addressbox">Город: Керчь, Севастопольская 80</div>
+                                    <div class="fieldbox">
+                                        <span class="field">Комнат: 3</span>    
+                                        <span class="field">Общая площадь: 100</span>   
+                                        <span class="field">Доп. поле: значение</span>  
+                                    </div>
+                                </div>
+                            </div>              
+                            <div class="fourth cell">
+                                <div class="price center">
+                                    <span class="ru">3 000 000 руб.</span>
+                                    <span class="usd">50 000 usd</span>
+                                </div>
+                                <div class="center">
+                                    <span class="stat work">Проверяется</span>
+                                </div>
+                                <div class="center">
+                                    <div class="same"></div>
+                                </div>
+                            </div>  
+                            <div class="clear"></div>
+                        </div>
+                        <!-- ////////////////////////////////////////////////////////////////////////////-->
+                        <!-- ////////////////////////////////////////////////////////////////////////////-->
+                        <div class="postline" id="6">
+                            <div class="first cell">
+                                <div class="image tablecell photo">
+                                    <a href="#" class="linkphoto" data-toggle="modal" data-target=".gallerymodal" title="Заголовок объявления"><img src="images/photo.jpg"></a>
+                                </div>
+                                <!--<div class="image thumb"></div>-->
+                            </div>          
+                            <div class="second cell">
+                                <div class="tablecell">
+                                    <div class="star no center">
+                                        <a href="#" title="Добавить в избранное"></a>
+                                    </div>
+                                    <div class="postid center">
+                                        ID: 9999999
+                                    </div>
+                                    <div class="data center">
+                                        <span>23.11</span><br />
+                                        <span>11:32</span>
+                                    </div>
+                                </div>
+                            </div>          
+                            <div class="third cell">
+                                <h4 class="title"><a href="#" data-toggle="modal" data-target=".postlinemodal">Меняю Дом на 1 или 2х комнатную квартиру в Симферополе...</a></h4>
+                                <div class="infobox">
+                                    <div class="addressbox">Город: Керчь, Севастопольская 80</div>
+                                    <div class="fieldbox">
+                                        <span class="field">Комнат: 3</span>    
+                                        <span class="field">Общая площадь: 100</span>   
+                                        <span class="field">Доп. поле: значение</span>  
+                                    </div>
+                                </div>
+                            </div>              
+                            <div class="fourth cell">
+                                <div class="price center">
+                                    <span class="ru">3 000 000 руб.</span>
+                                    <span class="usd">50 000 usd</span>
+                                </div>
+                                <div class="center">
+                                    <span class="stat work">Проверяется</span>
+                                </div>
+                                <div class="center">
+                                    <div class="same"></div>
+                                </div>
+                            </div>  
+                            <div class="clear"></div>
+                        </div>
+                        <!-- ////////////////////////////////////////////////////////////////////////////-->
+                        <!-- ////////////////////////////////////////////////////////////////////////////-->
+                        <div class="postline" id="6">
+                            <div class="first cell">
+                                <div class="image tablecell photo">
+                                    <a href="#" class="linkphoto" data-toggle="modal" data-target=".gallerymodal" title="Заголовок объявления"><img src="images/photo.jpg"></a>
+                                </div>
+                                <!--<div class="image thumb"></div>-->
+                            </div>          
+                            <div class="second cell">
+                                <div class="tablecell">
+                                    <div class="star no center">
+                                        <a href="#" title="Добавить в избранное"></a>
+                                    </div>
+                                    <div class="postid center">
+                                        ID: 9999999
+                                    </div>
+                                    <div class="data center">
+                                        <span>23.11</span><br />
+                                        <span>11:32</span>
+                                    </div>
+                                </div>
+                            </div>          
+                            <div class="third cell">
+                                <h4 class="title"><a href="#" data-toggle="modal" data-target=".postlinemodal">Меняю Дом на 1 или 2х комнатную квартиру в Симферополе...</a></h4>
+                                <div class="infobox">
+                                    <div class="addressbox">Город: Керчь, Севастопольская 80</div>
+                                    <div class="fieldbox">
+                                        <span class="field">Комнат: 3</span>    
+                                        <span class="field">Общая площадь: 100</span>   
+                                        <span class="field">Доп. поле: значение</span>  
+                                    </div>
+                                </div>
+                            </div>              
+                            <div class="fourth cell">
+                                <div class="price center">
+                                    <span class="ru">3 000 000 руб.</span>
+                                    <span class="usd">50 000 usd</span>
+                                </div>
+                                <div class="center">
+                                    <span class="stat work">Проверяется</span>
+                                </div>
+                                <div class="center">
+                                    <div class="same"></div>
+                                </div>
+                            </div>  
+                            <div class="clear"></div>
+                        </div>
+                        <!-- ////////////////////////////////////////////////////////////////////////////-->
+                        <!-- ////////////////////////////////////////////////////////////////////////////-->
+                        <div class="postline" id="6">
+                            <div class="first cell">
+                                <div class="image tablecell photo">
+                                    <a href="#" class="linkphoto" data-toggle="modal" data-target=".gallerymodal" title="Заголовок объявления"><img src="images/photo.jpg"></a>
+                                </div>
+                                <!--<div class="image thumb"></div>-->
+                            </div>          
+                            <div class="second cell">
+                                <div class="tablecell">
+                                    <div class="star no center">
+                                        <a href="#" title="Добавить в избранное"></a>
+                                    </div>
+                                    <div class="postid center">
+                                        ID: 9999999
+                                    </div>
+                                    <div class="data center">
+                                        <span>23.11</span><br />
+                                        <span>11:32</span>
+                                    </div>
+                                </div>
+                            </div>          
+                            <div class="third cell">
+                                <h4 class="title"><a href="#" data-toggle="modal" data-target=".postlinemodal">Меняю Дом на 1 или 2х комнатную квартиру в Симферополе...</a></h4>
+                                <div class="infobox">
+                                    <div class="addressbox">Город: Керчь, Севастопольская 80</div>
+                                    <div class="fieldbox">
+                                        <span class="field">Комнат: 3</span>    
+                                        <span class="field">Общая площадь: 100</span>   
+                                        <span class="field">Доп. поле: значение</span>  
+                                    </div>
+                                </div>
+                            </div>              
+                            <div class="fourth cell">
+                                <div class="price center">
+                                    <span class="ru">3 000 000 руб.</span>
+                                    <span class="usd">50 000 usd</span>
+                                </div>
+                                <div class="center">
+                                    <span class="stat work">Проверяется</span>
+                                </div>
+                                <div class="center">
+                                    <div class="same"></div>
+                                </div>
+                            </div>  
+                            <div class="clear"></div>
+                        </div>
+                        <!-- ////////////////////////////////////////////////////////////////////////////-->
                         <!-- ////////////////////////////////////////////////////////////////////////////-->
                         <div class="postline" id="6">
                             <div class="first cell">
