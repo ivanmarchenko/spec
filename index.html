@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SpecRielt</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+        <div id="tg"><a href="#menu-toggle" id="menu-toggle"> <span class="glyphicon glyphicon-remove"></span></a></div>
+        <div id="logo"><a href="/"><h1>Spec<span>Rielt</span></h1></a></div>
+        <!-- Блок категорий -->
+            <div class="panel-group" id="accordion">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseDpone">
+                        Квартиры
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseDpone" class="panel-collapse collapse">
+                  <div class="panel-body">
+                  <ul class="sidebar_menu">
+                    <li>
+                        <a href="#">Продажа</a>
+                    </li>
+                    <li>
+                        <a href="#">Аренда длительно</a>
+                    </li>
+                    <li>
+                        <a href="#">Аренда посуточно</a>
+                    </li>
+                  </ul> 
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseDptwo">
+                        Комнаты
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseDptwo" class="panel-collapse collapse">
+                  <div class="panel-body">
+                  <ul class="sidebar_menu">
+                    <li>
+                        <a href="#">Продажа</a>
+                    </li>
+                    <li>
+                        <a href="#">Аренда длительно</a>
+                    </li>
+                    <li>
+                        <a href="#">Аренда посуточно</a>
+                    </li>
+                  </ul> 
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseDpthree">
+                        Дома, дачи, котеджи
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseDpthree" class="panel-collapse collapse">
+                  <div class="panel-body">
+                  <ul class="sidebar_menu">
+                    <li>
+                        <a href="#">Продажа</a>
+                    </li>
+                    <li>
+                        <a href="#">Аренда длительно</a>
+                    </li>
+                    <li>
+                        <a href="#">Аренда посуточно</a>
+                    </li>
+                  </ul> 
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseDpfour">
+                        Участки
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseDpfour" class="panel-collapse collapse">
+                  <div class="panel-body">
+                  <ul class="sidebar_menu">
+                    <li>
+                        <a href="#">Продажа</a>
+                    </li>
+                  </ul> 
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseDpfive">
+                        Коммерческая
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseDpfive" class="panel-collapse collapse">
+                  <div class="panel-body">
+                  <ul class="sidebar_menu">
+                    <li>
+                        <a href="#">Продажа</a>
+                    </li>
+                    <li>
+                        <a href="#">Аренда</a>
+                    </li>
+                  </ul> 
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseDpsix">
+                        Гаражи
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseDpsix" class="panel-collapse collapse">
+                  <div class="panel-body">
+                  <ul class="sidebar_menu">
+                    <li>
+                        <a href="#">Продажа</a>
+                    </li>
+                  </ul> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Конец блока категорий -->
+            <a id="filtrbt" href="#" title="Фильтровать категории" data-toggle="modal" data-target="#myModal"></a>    
+            <!-- Фильтр -->
+            <div class="filtr sb">
+                <div class="filter-price"> 
+                    <label>Цена
+                        <select class="unit-selector">
+                            <option value="rub">rub</option>
+                            <option value="usd">usd</option>
+                        </select>
+                    </label>
+                    <div class="range">
+                        <input type="text" class="min" placeholder="от">
+                        <span class="separator">—</span>
+                        <input type="text" class="max" placeholder="до">
+                    </div>
+                    <div class="checkbox whithfoto">
+                        <label><input type="checkbox" value="">Только с фото</label>
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">ОК</button>
+                        <button type="button" class="btn btn-danger">Отмена</button>
+                    </div>
+                    Поиск
+                </div>
+            </div>
+            <!-- Конец блока Фильтр -->
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+     
+                         
+    
+    
+
+        <div id="page-content-wrapper">
+           <!-- <div id="tg"><a href="#menu-toggle" id="menu-toggle"> <span class="glyphicon glyphicon-th"></span></a></div> -->
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Хлебные крошки -->
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb cut">
+                          <li><a href="#">Все объъявления</a></li>
+                          <li><a href="#">Дома, дачи, котеджи</a></li>
+                          <li class="active">Аренда длительно</li>
+                        </ol>    
+                    </div>
+                    <!-- Конец блока хлебные крошки -->                       
+                    <div class="col-sm-6" id="usermenu">     
+                        <!-- Кнопки печати и экспорта -->
+                        <div class="tool">
+                            <a id="excel" href="#" title="Выгрузить в Excel"></a>   
+                        </div>
+                        <div class="tool">
+                            <a id="print" href="#" title="Распечатать"></a>     
+                        </div>
+                        <!-- Конец блока печати и экспорта -->    
+                        <!-- Пользовательское меню -->          
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Меню пользователя <span class="caret"></span></button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Избранное</a></li>
+                                <li><a href="#">Бан-лист</a></li>
+                                <li><a href="#">Сменить пароль</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Выход</a></li>
+                            </ul>
+                        </div>
+                        <!-- Конец блока пользовательского меню--> 
+                    </div>              
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">                   
+                        <!-- Тип объявлений -->
+                        <div id="type">
+                            <ul class="menu">
+                                <li><a class="push" href="#">Все</a></li>   
+                                <li><a href="#">Частные</a></li>
+                                <li><a href="#">Агентства</a></li>  
+                            </ul>
+                        </div>
+                        <!-- Конец блока типов объявлений -->
+                        <!-- Сортировка -->
+                        <div class="sort">
+                            <select>
+                                <option>По дате</option>
+                                <option>Дешевле</option>
+                                <option>Дороже</option>
+                            </select>
+                        </div>
+                        <!-- Конец блока сортировки -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!--################################    Блок объявления    ########################################-->
+                        <div class="postline" id="1">
+                            <div class="first cell">
+                                <div class="image tablecell photo">
+                                </div>
+                                <!--<div class="image thumb"></div>-->
+                            </div>
+                    
+                            <div class="second cell">
+                                <div class="tablecell">
+                                    <div class="star no center">
+                                        <a href="#" title="Добавить в избранное"></a>
+                                    </div>
+                                    <div class="postid center">
+                                        ID: 9999999
+                                    </div>
+                                    <div class="data center">
+                                        <span>23.11</span><br />
+                                        <span>11:32</span>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="third cell">
+                                <h4 class="title"><a href="#" data-toggle="modal" data-target=".postlinemodal">Меняю Дом на 1 или 2х комнатную квартиру в Симферополе...</a></h4>
+                                <div class="infobox">
+                                    <div class="addressbox">Город: Керчь, Севастопольская 80</div>
+                                    <div class="fieldbox">
+                                        <span class="field">Комнат: 3</span>    
+                                        <span class="field">Общая площадь: 100</span>   
+                                        <span class="field">Доп. поле: значение</span>  
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="fourth cell">
+                                <div class="price center">
+                                    <span class="ru">3 000 000 руб.</span>
+                                    <span class="usd">50 000 usd</span>
+                                </div>
+                                <div class="center">
+                                    <span class="stat get">Проверено 25.11 в 12:21</span>
+                                </div>
+                                <div class="center">
+                                    <div class="same"></div>
+                                </div>
+                            </div>  
+                            <div class="clear"></div>
+                        </div>
+                        <!--################################   Конец блока объявления   ########################################-->
+
+                        <!-- ////////////////////////////////////////////////////////////////////////////-->
+                        <div class="postline" id="2">
+                            <div class="first cell">
+                                <div class="image tablecell photo">
+                                    
+                                </div>
+                                <!--<div class="image thumb"></div>-->
+                            </div>
+                    
+                            <div class="second cell">
+                                <div class="tablecell">
+                                    <div class="star no center">
+                                        <a href="#" title="Убрать из избранного"></a>
+                                    </div>
+                                    <div class="postid center">
+                                        ID: 9999999
+                                    </div>
+                                    <div class="data center">
+                                        <span>23.11</span><br />
+                                        <span>11:32</span>
+                                    </div>
+                                </div>
+                            </div>          
+                            <div class="third cell">
+                                <h4 class="title"><a href="#" data-toggle="modal" data-target=".postlinemodal">Меняю Дом на 1 или 2х комнатную квартиру в Симферополе...</a></h4>
+                                <div class="infobox">
+                                    <div class="addressbox">Город: Керчь, Севастопольская 80</div>
+                                    <div class="fieldbox">
+                                        <span class="field">Комнат: 3</span>    
+                                        <span class="field">Общая площадь: 100</span>   
+                                        <span class="field">Доп. поле: значение</span>  
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="fourth cell">
+                                <div class="price center">
+                                    <span class="ru">3 000 000 руб.</span>
+                                    <span class="usd">50 000 usd</span>
+                                </div>
+                                <div class="center">
+                                    <span class="stat work">Проверяется</span>
+                                </div>
+                                <div class="center">
+                                    <div class="same"></div>
+                                </div>
+                            </div>  
+                            <div class="clear"></div>
+                        </div>
+                        <!-- ////////////////////////////////////////////////////////////////////////////-->
+                        <div class="postline" id="3">
+                            <div class="first cell">
+                                <div class="image tablecell photo">
+                                    <a href="#" class="linkphoto" title="Заголовок объявления" data-toggle="modal" data-target=".gallerymodal"><img src="images/photo.jpg"></a>
+                                </div>
+                                <!--<div class="image thumb"></div>-->
+                            </div>
+                    
+                            <div class="second cell">
+                                <div class="tablecell">
+                                    <div class="star no center">
+                                        <a href="#" title="Добавить в избранное"></a>
+                                    </div>
+                                    <div class="postid center">
+                                        ID: 9999999
+                                    </div>
+                                    <div class="data center">
+                                        <span>23.11</span><br />
+                                        <span>11:32</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="third cell">
+                                <h4 class="title"><a href="#" data-toggle="modal" data-target=".postlinemodal">Меняю Дом на 1 или 2х комнатную квартиру в Симферополе...</a></h4>
+                                <div class="infobox">
+                                    <div class="addressbox">Город: Керчь, Севастопольская 80</div>
+                                    <div class="fieldbox">
+                                        <span class="field">Комнат: 3</span>    
+                                        <span class="field">Общая площадь: 100</span>   
+                                        <span class="field">Доп. поле: значение</span>  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fourth cell">
+                                <div class="price center">
+                                    <span class="ru">3 000 000 руб.</span>
+                                    <span class="usd">50 000 usd</span>
+                                </div>
+                                <div class="center">
+                                    <span class="stat get">Проверено 25.11 в 12:21</span>
+                                </div>
+                                <div class="center">
+                                    <div class="same"><a href="#" class="bingo" title="Посмотреть с совпадением номера">совпадений номера - <span class="col">10</span></a></div>
+                                </div>
+                            </div>  
+                            <div class="clear"></div>
+                        </div>
+                        <!-- ////////////////////////////////////////////////////////////////////////////-->
+                        <div class="postline" id="4">
+                            <div class="first cell">
+                                <div class="image tablecell photo">
+                                    <a href="#" class="linkphoto" title="Заголовок объявления" data-toggle="modal" data-target=".gallerymodal"><img src="images/photo.jpg"></a>
+                                </div>
+                                <!--<div class="image thumb"></div>-->
+                            </div>
+                    
+                            <div class="second cell">
+                                <div class="tablecell">
+                                    <div class="star no center">
+                                        <a href="#" title="Добавить в избранное"></a>
+                                    </div>
+                                    <div class="postid center">
+                                        ID: 9999999
+                                    </div>
+                                    <div class="data center">
+                                        <span>23.11</span><br />
+                                        <span>11:32</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="third cell">
+                                <h4 class="title"><a href="#" data-toggle="modal" data-target=".postlinemodal">Меняю Дом на 1 или 2х комнатную квартиру в Симферополе...</a></h4>
+                                <div class="infobox">
+                                    <div class="addressbox">Город: Керчь, Севастопольская 80</div>
+                                    <div class="fieldbox">
+                                        <span class="field">Комнат: 3</span>    
+                                        <span class="field">Общая площадь: 100</span>   
+                                        <span class="field">Доп. поле: значение</span>  
+                                    </div>
+                                </div>
+                            </div>              
+                            <div class="fourth cell">
+                                <div class="price center">
+                                    <span class="ru">3 000 000 руб.</span>
+                                    <span class="usd">50 000 usd</span>
+                                </div>
+                                <div class="center">
+                                    <span class="stat work">Проверяется</span>
+                                </div>
+                                <div class="center">
+                                    <div class="same"></div>
+                                </div>
+                            </div>  
+                            <div class="clear"></div>
+                        </div>
+                        <!-- ////////////////////////////////////////////////////////////////////////////-->
+                        <div class="postline" id="5">
+                            <div class="first cell">
+                                <div class="image tablecell photo">
+                                    <a href="#" class="linkphoto" title="Заголовок объявления" data-toggle="modal" data-target=".gallerymodal"><img src="images/photo.jpg"></a>
+                                </div>
+                                <!--<div class="image thumb"></div>-->
+                            </div>
+                    
+                            <div class="second cell">
+                                <div class="tablecell">
+                                    <div class="star yes center">
+                                        <a href="#" title="Добавить в избранное"></a>
+                                    </div>
+                                    <div class="postid center">
+                                        ID: 9999999
+                                    </div>
+                                    <div class="data center">
+                                        <span>23.11</span><br />
+                                        <span>11:32</span>
+                                    </div>
+                                </div>
+                            </div>          
+                            <div class="third cell">
+                                <h4 class="title"><a href="#" data-toggle="modal" data-target=".postlinemodal">Меняю Дом на 1 или 2х комнатную квартиру в Симферополе...</a></h4>
+                                <div class="infobox">
+                                    <div class="addressbox">Город: Керчь, Севастопольская 80</div>
+                                    <div class="fieldbox">
+                                        <span class="field">Комнат: 3</span>    
+                                        <span class="field">Общая площадь: 100</span>   
+                                        <span class="field">Доп. поле: значение</span>  
+                                    </div>
+                                </div>
+                            </div>              
+                            <div class="fourth cell">
+                                <div class="price center">
+                                    <span class="ru">3 000 000 руб.</span>
+                                    <span class="usd">50 000 usd</span>
+                                </div>
+                                <div class="center">
+                                    <span class="stat work">Проверяется</span>
+                                </div>
+                                <div class="center">
+                                    <div class="same"></div>
+                                </div>
+                            </div>  
+                            <div class="clear"></div>
+                        </div>                  
+                        <!-- ////////////////////////////////////////////////////////////////////////////-->
+                        <div class="postline" id="6">
+                            <div class="first cell">
+                                <div class="image tablecell photo">
+                                    <a href="#" class="linkphoto" data-toggle="modal" data-target=".gallerymodal" title="Заголовок объявления"><img src="images/photo.jpg"></a>
+                                </div>
+                                <!--<div class="image thumb"></div>-->
+                            </div>          
+                            <div class="second cell">
+                                <div class="tablecell">
+                                    <div class="star no center">
+                                        <a href="#" title="Добавить в избранное"></a>
+                                    </div>
+                                    <div class="postid center">
+                                        ID: 9999999
+                                    </div>
+                                    <div class="data center">
+                                        <span>23.11</span><br />
+                                        <span>11:32</span>
+                                    </div>
+                                </div>
+                            </div>          
+                            <div class="third cell">
+                                <h4 class="title"><a href="#" data-toggle="modal" data-target=".postlinemodal">Меняю Дом на 1 или 2х комнатную квартиру в Симферополе...</a></h4>
+                                <div class="infobox">
+                                    <div class="addressbox">Город: Керчь, Севастопольская 80</div>
+                                    <div class="fieldbox">
+                                        <span class="field">Комнат: 3</span>    
+                                        <span class="field">Общая площадь: 100</span>   
+                                        <span class="field">Доп. поле: значение</span>  
+                                    </div>
+                                </div>
+                            </div>              
+                            <div class="fourth cell">
+                                <div class="price center">
+                                    <span class="ru">3 000 000 руб.</span>
+                                    <span class="usd">50 000 usd</span>
+                                </div>
+                                <div class="center">
+                                    <span class="stat work">Проверяется</span>
+                                </div>
+                                <div class="center">
+                                    <div class="same"></div>
+                                </div>
+                            </div>  
+                            <div class="clear"></div>
+                        </div>
+                        <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+        $("#tg").toggleClass("toggled");     
+    });
+    </script>
+</body>
+</html>
+
+
+
+
+
+<!--####################################### Модальное окно для фильтра категорий ########################################-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" id="modthin">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Выберите категорию</h4>
+      </div>
+      <div class="modal-body" id="dpmodal">
+      <!-- Блок категорий -->  
+        <h4 class="panel-title">Квартиры</h4>
+        <div class="checkbox">
+            <label><input type="checkbox" value="" >Продажа</label>
+        </div>   
+        <div class="checkbox">
+            <label><input type="checkbox" value="" >Аренда длительно</label>
+        </div>   
+        <div class="checkbox">
+            <label><input type="checkbox" value="" >Аренда посуточно</label>
+        </div>
+        <h4 class="panel-title">Комнаты</h4>
+        <div class="checkbox">
+            <label><input type="checkbox" value="" >Продажа</label>
+        </div>   
+        <div class="checkbox">
+            <label><input type="checkbox" value="" >Аренда длительно</label>
+        </div>   
+        <div class="checkbox">
+            <label><input type="checkbox" value="" >Аренда посуточно</label>
+        </div>   
+        <h4 class="panel-title">Дома, дачи, котеджи</h4>
+        <div class="checkbox">
+            <label><input type="checkbox" value="" >Продажа</label>
+        </div>   
+        <div class="checkbox">
+            <label><input type="checkbox" value="" >Аренда длительно</label>
+        </div>   
+        <div class="checkbox">
+            <label><input type="checkbox" value="" >Аренда посуточно</label>
+        </div>   
+        <h4 class="panel-title">Участки</h4>
+        <div class="checkbox">
+            <label><input type="checkbox" value="" >Продажа</label>
+        </div>   
+        <h4 class="panel-title">Коммерческая</h4>
+        <div class="checkbox">
+            <label><input type="checkbox" value="" >Продажа</label>
+        </div>   
+        <div class="checkbox">
+            <label><input type="checkbox" value="" >Аренда</label>
+        </div> 
+        <h4 class="panel-title">Гаражи</h4>
+        <div class="checkbox">
+            <label><input type="checkbox" value="" >Продажа</label>
+        </div>   
+        <!-- Конец блока категорий -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success">Применить</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--##################################### Конец блока модального окна для фильтра категорий ######################################-->
+
+
+
+
+
+                    <!-- ////////////////////////////////////////////////////////////////////////////-->
+                    <!-- ////////////////////////////////////////////////////////////////////////////-->
+                    <!-- ////////////////////////////////////////////////////////////////////////////-->
+                    <!-- ////////////////     Модальное окно детальной информации       /////////////-->
+                    <!-- ////////////////////////////////////////////////////////////////////////////-->
+                    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+            <!-- Modal -->
+<div class="modal fade postlinemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+         <div class="popup">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                 <h4 class="title">Меняю Дом на 1 или 2х комнатную квартиру в Симферополе недорого от собственника</h4>
+                    <div class="star no left">
+                         <a href="#" title="Добавить в избранное"></a>
+                    </div>
+                    <div class="price left">
+                        <span class="ru">3 000 000 руб.</span>
+                        <span class="usd">50 000 usd</span>
+                    </div>
+                    <div class="left">
+                        <span class="phone">+79788264124 </span> <span class="name">Наталья</span><br />
+                        <span class="info">ID: 9999999 | 16.10 в 21:00 | <a class="donor" href="#">Источник</a></span>
+                    </div>
+                    <span class="stat get right">Проверено 25.11 в 12:21</span>
+                    <div class="same left">
+                        <a href="#" class="bingo" title="Посмотреть с совпадением номера">совпадений номера - <span class="colphone">10</span></a>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="rowdetail left">
+                        <div class="addressbox"><b>Адрес:</b> Керчь, Севастопольская 80</div>
+                            <span class="field"><b>Комнат:</b> 4</span>
+                            <span class="field"><b>Общая площадь:</b> 98 кв. м.</span><br />
+                            <span class="field"><b>Объект:</b> Вторичка</span>
+                            <span class="field"><b>Этаж:</b> 10</span><br />
+                            <span class="field"><b>Всего этажей:</b> 10</span>                                           
+                        </div> 
+                        <div class="description left">
+                            Сдам 2-х комнатную квартиру,на 1 этаже, порядочной семейной паре, район-Москольцо, мебель частично, техника, кабельное тв, интернет, 21000 руб/мес. Посредникам-не тревожить!
+                        </div>  
+                        <div class="clear"></div>
+                    </div>
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                          <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+                        <!-- Wrapper for slides  -->
+                        <div class="carousel-inner">
+                          <div class="item active" style="height: 400px;">
+                            <img src="images/P8271117.JPG" alt="" style="max-height: 400px;  margin: auto; top: 0; left: 0; right: 0; bottom: 0;">
+                          </div>
+                          <div class="item" style="height: 400px;">
+                            <img src="images/P8271060.JPG" alt="" style="max-height: 400px;  position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;">
+                          </div>                        
+                          <div class="item" style="height: 400px;">
+                            <img src="images/P8271118.JPG" alt="Flower" style="max-height: 400px;  position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;">
+                          </div>
+
+                          <div class="item" style="height: 400px;">
+                            <img src="images/P8271119.JPG" alt="Flower" style="max-height: 400px;  position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;">
+                          </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                          <span class="sr-only">Назад</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                          <span class="sr-only">Вперед</span>
+                        </a>
+                      </div>
+
+
+
+         </div>         
+      </div>
+    </div>
+  </div>
+</div>
+       
+
+
+
+
+                    <!-- ////////////////////////////////////////////////////////////////////////////-->
+                    <!-- ////////////////////////////////////////////////////////////////////////////-->
+                    <!-- ////////////////////////////////////////////////////////////////////////////-->
+                    <!-- ////////////////////////////////////////////////////////////////////////////-->
+                    <!-- ////////////////////////////////////////////////////////////////////////////-->
+                    <!-- ////////////////////////////////////////////////////////////////////////////-->
+                    <!-- ////////////////////////////////////////////////////////////////////////////-->
+                    <!-- ////////////////      конец молального окна детальной информации     ///////-->
+
+
+
+
+                    <!-- ////////////////////////////////////////////////////////////////////////////-->
+                    <!-- ////////////////////////////////////////////////////////////////////////////-->
+                    <!-- ////////////////////////////////////////////////////////////////////////////-->
+                    <!-- ////////////////////////////////////////////////////////////////////////////-->
+                    <!-- ////////////////////////////////////////////////////////////////////////////-->
+                    <!-- ////////////////////////////////////////////////////////////////////////////-->
+                    <!-- ////////////////             блок модального окна галлереи           ///////-->
+
+<div class="modal fade gallerymodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+
+<div id="carousel-example-generic" class="carousel carousel-fade" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+                            <img src="images/P8271117.JPG" alt="" style="">
+                          </div>
+                          <div class="item">
+                            <img src="images/P8271060.JPG" alt="" style="">
+                          </div>                        
+                          <div class="item">
+                            <img src="images/P8271118.JPG" alt="" style="">
+                          </div>
+
+                          <div class="item">
+                            <img src="images/P8271119.JPG" alt="" style="">
+                          </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+    
+
+
+       
+      </div>
+    </div>
+  </div>
+</div>
